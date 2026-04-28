@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brexit and the UK’s Value-Added Trade with Non-EU Countries | Yuxiang Huang</title>
+  <meta name="description" content="A research landing page for Yuxiang Huang’s open-access article on Brexit, UK value-added trade, non-EU countries, global value chains, and input-output analysis." />
+  <meta name="keywords" content="Brexit, UK value-added trade, non-EU countries, global value chains, input-output analysis, ADB MRIO, indirect value-added trade, trade policy" />
+  <meta name="author" content="Yuxiang Huang" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Brexit and the UK’s Value-Added Trade with Non-EU Countries" />
+  <meta property="og:description" content="An open-access study using ADB multiregional input-output tables to examine how the UK’s value-added trade and global value chain participation changed after the EU referendum." />
+  <meta property="og:url" content="https://link.springer.com/article/10.1186/s40008-026-00374-9" />
+  <meta property="og:site_name" content="Yuxiang Huang Research" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Brexit and the UK’s Value-Added Trade with Non-EU Countries" />
+  <meta name="twitter:description" content="A study of post-Brexit UK value-added trade, non-EU partners, and global value chains using input-output analysis." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Have non-EU countries become more involved in the UK’s value-added trade? An input–output analysis following the EU referendum",
+    "alternativeHeadline": "Brexit and the UK’s Value-Added Trade with Non-EU Countries",
+    "author": {
+      "@type": "Person",
+      "name": "Yuxiang Huang",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Graduate School of Economics, Ritsumeikan University"
+      },
+      "sameAs": "https://orcid.org/0009-0008-1687-7532"
+    },
+    "datePublished": "2026-04-16",
+    "isAccessibleForFree": true,
+    "publisher": {
+      "@type": "Organization",
+      "name": "Springer Nature"
+    },
+    "isPartOf": {
+      "@type": "Periodical",
+      "name": "Journal of Economic Structures"
+    },
+    "identifier": "https://doi.org/10.1186/s40008-026-00374-9",
+    "url": "https://link.springer.com/article/10.1186/s40008-026-00374-9",
+    "keywords": [
+      "Brexit",
+      "UK value-added trade",
+      "non-EU countries",
+      "global value chains",
+      "input-output analysis",
+      "ADB MRIO",
+      "indirect value-added trade",
+      "trade policy"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #152033;
+      --muted: #5f6b7a;
+      --paper: #fbf7ef;
+      --card: #ffffff;
+      --line: #e5ded2;
+      --accent: #9b3d28;
+      --accent-dark: #672717;
+      --blue: #1f4e79;
+      --green: #4d6f52;
+      --shadow: 0 22px 60px rgba(21, 32, 51, 0.12);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(155, 61, 40, 0.14), transparent 34%),
+        radial-gradient(circle at 92% 8%, rgba(31, 78, 121, 0.14), transparent 32%),
+        linear-gradient(180deg, #fffaf1 0%, var(--paper) 38%, #f7efe3 100%);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 34px 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 750;
+      letter-spacing: -0.03em;
+    }
+
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, var(--accent), var(--blue));
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 800;
+      box-shadow: 0 14px 28px rgba(103, 39, 23, 0.22);
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      gap: 30px;
+      padding: 54px 0 36px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid rgba(155, 61, 40, 0.2);
+      border-radius: 999px;
+      color: var(--accent-dark);
+      background: rgba(255, 255, 255, 0.58);
+      font-size: 13px;
+      font-weight: 700;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin: 22px 0 18px;
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -0.07em;
+      max-width: 780px;
+    }
+
+    .subtitle {
+      font-size: clamp(18px, 2vw, 22px);
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 28px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 760;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn.primary {
+      background: var(--ink);
+      color: #fff;
+      box-shadow: 0 16px 32px rgba(21, 32, 51, 0.24);
+    }
+
+    .btn.secondary {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      color: var(--ink);
+    }
+
+    .article-card {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(229, 222, 210, 0.88);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 7px;
+      background: linear-gradient(90deg, var(--accent), var(--blue), var(--green));
+    }
+
+    .article-card .label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .article-card h2 {
+      font-size: 25px;
+      line-height: 1.18;
+      letter-spacing: -0.04em;
+      margin: 0 0 18px;
+    }
+
+    .meta-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+      font-size: 14px;
+    }
+
+    .meta-item {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+    }
+
+    .meta-item span:first-child {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .section-title {
+      display: grid;
+      grid-template-columns: 0.55fr 1fr;
+      gap: 26px;
+      align-items: start;
+      margin-bottom: 24px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(28px, 3.6vw, 46px);
+      line-height: 1.05;
+      letter-spacing: -0.06em;
+    }
+
+    .section-title p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .tile {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 18px 40px rgba(21, 32, 51, 0.06);
+    }
+
+    .tile strong {
+      display: block;
+      font-size: 18px;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .tile p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .visual {
+      margin-top: 24px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .visual-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+
+    .visual-title h3 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -0.05em;
+    }
+
+    .visual-title span {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: right;
+      max-width: 260px;
+    }
+
+    .network {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr 1fr;
+      gap: 18px;
+      align-items: center;
+      min-height: 260px;
+    }
+
+    .node {
+      border-radius: 24px;
+      padding: 24px;
+      min-height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(21, 32, 51, 0.08);
+    }
+
+    .node.eu {
+      background: linear-gradient(145deg, rgba(31, 78, 121, 0.12), rgba(31, 78, 121, 0.04));
+    }
+
+    .node.uk {
+      background: linear-gradient(145deg, rgba(21, 32, 51, 0.96), rgba(31, 78, 121, 0.88));
+      color: #fff;
+      min-height: 220px;
+      text-align: center;
+      box-shadow: 0 24px 55px rgba(21, 32, 51, 0.22);
+    }
+
+    .node.noneu {
+      background: linear-gradient(145deg, rgba(155, 61, 40, 0.13), rgba(155, 61, 40, 0.04));
+    }
+
+    .node small {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .node b {
+      font-size: 23px;
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+    }
+
+    .node p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .node.uk p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .method-strip {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(21, 32, 51, 0.06);
+      border: 1px solid rgba(21, 32, 51, 0.08);
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .quote-card {
+      background: var(--ink);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .quote-card p {
+      font-size: 28px;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+      margin: 0;
+    }
+
+    .quote-card span {
+      display: block;
+      margin-top: 18px;
+      color: rgba(255,255,255,0.62);
+      font-weight: 700;
+    }
+
+    .prose-card {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .prose-card p:first-child {
+      margin-top: 0;
+    }
+
+    .prose-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .keyword {
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      padding: 10px 14px;
+      font-weight: 750;
+      color: var(--ink);
+      box-shadow: 0 12px 30px rgba(21, 32, 51, 0.05);
+    }
+
+    .citation-box {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .citation-box code {
+      white-space: normal;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      color: #283243;
+      background: rgba(21, 32, 51, 0.05);
+      padding: 14px;
+      border-radius: 16px;
+      line-height: 1.55;
+    }
+
+    footer {
+      padding: 44px 0 60px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--ink);
+      font-weight: 760;
+    }
+
+    @media (max-width: 860px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      .hero,
+      .section-title,
+      .summary,
+      .network {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 32px;
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .visual-title {
+        flex-direction: column;
+      }
+
+      .visual-title span {
+        text-align: left;
+      }
+
+      .node.uk {
+        min-height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <div class="mark">YH</div>
+        <div>Yuxiang Huang · Research</div>
+      </div>
+      <nav aria-label="Page navigation">
+        <a href="#findings">Findings</a>
+        <a href="#method">Method</a>
+        <a href="#summary">Plain-language summary</a>
+        <a href="#citation">Citation</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow">Open-access article · Journal of Economic Structures · 2026</div>
+          <h1 id="hero-title">Brexit and the UK’s value-added trade with non-EU countries</h1>
+          <p class="subtitle">
+            A study of how the UK’s global value chain participation changed after the EU referendum, using multiregional input-output analysis to trace direct and indirect value-added flows.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="https://link.springer.com/article/10.1186/s40008-026-00374-9" target="_blank" rel="noopener">Read the open-access article</a>
+            <a class="btn secondary" href="https://doi.org/10.1186/s40008-026-00374-9" target="_blank" rel="noopener">View DOI</a>
+          </div>
+        </div>
+
+        <aside class="article-card" aria-label="Article information">
+          <div class="label">Published research article</div>
+          <h2>Have non-EU countries become more involved in the UK’s value-added trade?</h2>
+          <p>An input–output analysis following the EU referendum.</p>
+          <div class="meta-list">
+            <div class="meta-item"><span>Author</span><span>Yuxiang Huang</span></div>
+            <div class="meta-item"><span>Email</span><span><a href="mailto:huangyuxiang0036@gmail.com">huangyuxiang0036@gmail.com</a></span></div>
+            <div class="meta-item"><span>Affiliation</span><span>Graduate School of Economics, Ritsumeikan University</span></div>
+            <div class="meta-item"><span>Journal</span><span>Journal of Economic Structures</span></div>
+            <div class="meta-item"><span>Published</span><span>16 April 2026</span></div>
+            <div class="meta-item"><span>DOI</span><span>10.1186/s40008-026-00374-9</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="findings">
+        <div class="section-title">
+          <h2>Key takeaway</h2>
+          <p>Post-Brexit adjustment is better understood as a reconfiguration of value-added linkages, rather than a simple replacement of the EU by non-EU partners.</p>
+        </div>
+
+        <div class="visual" role="img" aria-label="Conceptual summary of the article's key finding">
+          <div class="visual-title">
+            <h3>Diversification without EU decoupling</h3>
+            <span>Conceptual summary of the article’s main empirical interpretation</span>
+          </div>
+          <div class="network">
+            <div class="node eu">
+              <small>EU partners</small>
+              <b>Remained central</b>
+              <p>The EU continued to occupy a structurally important position in the UK’s value-added trade network.</p>
+            </div>
+            <div class="node uk">
+              <small>United Kingdom</small>
+              <b>Value-added trade network</b>
+              <p>Direct and indirect value-added flows traced through global value chains.</p>
+            </div>
+            <div class="node noneu">
+              <small>Non-EU partners</small>
+              <b>Became more involved</b>
+              <p>Several non-EU partners showed increased involvement in UK value-added trade after the referendum.</p>
+            </div>
+          </div>
+          <div class="method-strip">
+            <span class="chip">Brexit</span>
+            <span class="chip">UK value-added trade</span>
+            <span class="chip">Global value chains</span>
+            <span class="chip">Input-output analysis</span>
+            <span class="chip">ADB MRIO, 2000–2023</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="method">
+        <div class="section-title">
+          <h2>What the paper examines</h2>
+          <p>The article connects the Brexit debate with value-added trade accounting, focusing on how production linkages are organized across countries and industries.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="tile">
+            <strong>Research question</strong>
+            <p>Have non-EU countries become more involved in the UK’s value-added trade following the EU referendum?</p>
+          </article>
+          <article class="tile">
+            <strong>Data and method</strong>
+            <p>The study uses Asian Development Bank multiregional input-output tables for 2000–2023 to trace value-added flows.</p>
+          </article>
+          <article class="tile">
+            <strong>Economic lens</strong>
+            <p>Rather than relying only on gross trade, the paper examines direct and indirect value-added flows within global value chains.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="summary">
+        <div class="summary">
+          <div class="quote-card">
+            <p>Non-EU involvement increased, but EU centrality did not disappear.</p>
+            <span>Plain-language takeaway</span>
+          </div>
+          <div class="prose-card">
+            <p>
+              Brexit raised an important question for UK trade policy: did the UK become less dependent on the EU and more connected with non-EU partners? This article approaches the question through value-added trade, which captures where economic value is created and how it moves through global production networks.
+            </p>
+            <p>
+              The findings suggest that several non-EU partners became more involved in the UK’s value-added trade after the referendum. However, this did not amount to a simple displacement of the EU. The EU remained central to the UK’s value-added trading activities, while indirect value-added trade through third countries gradually increased after formal EU withdrawal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="keywords-title">
+        <div class="section-title">
+          <h2 id="keywords-title">Research keywords</h2>
+          <p>These terms summarize the article’s main contribution and improve discoverability for readers searching across Brexit, trade policy, and global value chain research.</p>
+        </div>
+        <div class="keywords" aria-label="Keywords">
+          <span class="keyword">Brexit</span>
+          <span class="keyword">UK value-added trade</span>
+          <span class="keyword">Non-EU countries</span>
+          <span class="keyword">Global value chains</span>
+          <span class="keyword">Input-output analysis</span>
+          <span class="keyword">Indirect value-added trade</span>
+          <span class="keyword">ADB MRIO</span>
+          <span class="keyword">Trade policy</span>
+        </div>
+      </section>
+
+      <section id="citation">
+        <div class="section-title">
+          <h2>Citation</h2>
+          <p>Use the publisher’s version for citation and full-text access.</p>
+        </div>
+        <div class="citation-box">
+          <code>Huang, Y. Have non-EU countries become more involved in the UK’s value-added trade? An input–output analysis following the EU referendum. Journal of Economic Structures (2026). https://doi.org/10.1186/s40008-026-00374-9</code>
+          <div class="actions">
+            <a class="btn primary" href="https://link.springer.com/article/10.1186/s40008-026-00374-9" target="_blank" rel="noopener">Open Springer page</a>
+            <a class="btn secondary" href="https://orcid.org/0009-0008-1687-7532" target="_blank" rel="noopener">Author ORCID</a>
+            <a class="btn secondary" href="mailto:huangyuxiang0036@gmail.com">Contact author</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This page is an independent research landing page created to summarize and link to the official open-access article hosted by Springer Nature. For the authoritative version, citation details, and full text, please refer to the publisher’s page. Contact: <a href="mailto:huangyuxiang0036@gmail.com">huangyuxiang0036@gmail.com</a>.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
